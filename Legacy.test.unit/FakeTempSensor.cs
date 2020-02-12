@@ -4,14 +4,16 @@ using System.Text;
 
 namespace Legacy
 {
-    public class FakeTempSensor : ITempSensor
+    internal class FakeTempSensor : ITempSensor
     {
         private Random gen = new Random();
 
         public int GetTemp()
         {
-            return gen.Next(-5, 45);
+            return number;
         }
+
+        public int number { get; set; }
 
         public bool RunSelfTest()
         {

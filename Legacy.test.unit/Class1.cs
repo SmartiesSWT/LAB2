@@ -3,14 +3,32 @@ using NUnit.Framework;
 
 namespace Legacy.test.unit
 {
-    public class LgacyTest
+    public class LegacyTest
     {
         private ECS uut;
+
         public void Setup()
         {
             // Arrange
-            uut = new ECS(5);
+            uut = new ECS(5, new FakeTempSensor(), new FakeHeater());
         }
+
+        [Test]
+        public void regulate_When_Temp_Is_Beyond_Threshold()
+        {
+            uut.
+        }
+
+
+
+
+
+
+
+
+
+
+
 
         [TestCase(4, 0, 4)]
         [TestCase(3, 0, 3)]
