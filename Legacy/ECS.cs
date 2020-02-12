@@ -14,7 +14,7 @@ namespace Legacy
         {
             SetThreshold(thr);
             _tempSensor = new FakeTempSensor(); //Test code
-            _heater = new FakeHeater();         //Test code
+            _heater = new FakeHeater();         //Test code.
 
             //_tempSensor = new TempSensor(); //Production code
             //_heater = new Heater();         //Production code
