@@ -7,13 +7,14 @@ namespace Legacy
     internal class FakeTempSensor : ITempSensor
     {
         private Random gen = new Random();
+        public int Number { get; set; }
 
         public int GetTemp()
         {
-            return number;
+            return Number;
         }
 
-        public int number { get; set; }
+        
 
         public bool RunSelfTest()
         {
